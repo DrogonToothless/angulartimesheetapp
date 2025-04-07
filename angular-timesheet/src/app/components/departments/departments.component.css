@@ -1,0 +1,11 @@
+mat-card {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+
+mat-list-item:hover {
+  background-color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=departments.component.css.map */
