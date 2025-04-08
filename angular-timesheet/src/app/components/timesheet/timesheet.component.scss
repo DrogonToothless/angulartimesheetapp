@@ -2,10 +2,32 @@
     display: flex;
     align-items: center;
     height: calc(100% - 64px);
+    color: black;
+    background-color: white;
 }
 h2 {
     text-align: center;
 }
 .cards {
     margin: auto;
+    background-color: white;
+}
+mat-form-field {
+    width: calc(100% - 40px);
+    
+}
+.hours {
+    margin-top: 30px;
+}
+.hours {
+    min-height: 200px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hours-input {
+    max-width: 75px;
+    margin-left: 15px;
+    text-align: center;
 }
