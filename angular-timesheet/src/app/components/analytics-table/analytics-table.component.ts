@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Employee } from '../../interfaces/employee'
 @Component({
   selector: 'app-analytics-table',
@@ -6,7 +6,7 @@ import { Employee } from '../../interfaces/employee'
   templateUrl: './analytics-table.component.html',
   styleUrl: './analytics-table.component.scss'
 })
-export class AnalyticsTableComponent{
+export class AnalyticsTableComponent implements OnInit {
   @Input() 
   departmentId: string | undefined;
   weekdays: string[] = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
