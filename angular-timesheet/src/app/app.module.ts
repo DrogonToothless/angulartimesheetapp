@@ -10,6 +10,10 @@ import { AnalyticsTableComponent } from './components/analytics-table/analytics-
 import { MaterialModule } from './modules/material.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environment';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { MatIcon } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     MaterialModule,
     FormsModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
