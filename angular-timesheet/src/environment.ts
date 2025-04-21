@@ -1,4 +1,4 @@
-const firebaseConfig = {
+export const environment = {
     production: false,
     firebaseConfig: {
         apiKey: "AIzaSyBDfqp_jeJthWxul_oczhNzaMhoGgbctzE",
@@ -7,5 +7,5 @@ const firebaseConfig = {
         storageBucket: "timesheetfirebase-22c7a.firebasestorage.app",
         messagingSenderId: "284943222141",
         appId: "1:284943222141:web:18631e0c20c2f3ed81f814"
-    },
+    }
 };
